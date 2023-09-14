@@ -1,0 +1,24 @@
+.memeContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.meme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memeStyle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 700px;
+    width: 700px;
+}
+
+.hidden {
+    display: none;
+}
+.memeTov{
+    
+}
