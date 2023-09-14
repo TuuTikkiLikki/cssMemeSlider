@@ -11,7 +11,7 @@
 
 .memeStyle{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     height: 700px;
     width: 700px;
 }
@@ -20,5 +20,59 @@
     display: none;
 }
 .memeTov{
-    
+    text-align: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.pagination-dot{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.pagination-dot:hover{
+  cursor: pointer;
+}
+
+.dot{
+    background-color: #0C0C0E;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 5px;
+}
+.dot:hover{
+    background-color: #6e5c54;
+}
+.dot:active{
+    background-color: #ecafae;
+}
+.dot-active{
+    background-color: #ebc2af;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 5px;
+    cursor: default;
+    pointer-events: none;
+}
+.dot-active:hover{
+    cursor: default;
+    pointer-events: none;
 }

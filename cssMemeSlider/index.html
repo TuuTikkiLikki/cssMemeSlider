@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
     <title>Tuu Tikki Meme Slider</title>
 </head>
 <body>
     <div class="memeContainer">
         <div class="meme">
-            <img src="cssMemeSlider/img/1.png" alt="email" class="memeStyle">
-            <div class="memeTov"> "I hope this email finds you well" How this email found me</div>
-            
-
+            <img src="assets/img/1.png" alt="email" class="memeStyle " >
+            <div class="memeTov"> "I hope this email finds you well" <br> How this email found me</div>
         </div>
-        
-        <img src="cssMemeSlider/img/2.png" alt="todolist" class="memeStyle hidden">
-        <img src="cssMemeSlider/img/3.png" alt="personalreasons" class="memeStyle hidden">
-        <img src="cssMemeSlider/img/4.png" alt="adult" class="memeStyle hidden">
-
+        <div class="meme hidden">
+            <img src="assets/img/2.png" alt="todolist" class="memeStyle ">
+            <div class="memeTov"> Сrossing things off my to-do list <br> (I haven't done them, I just don't want them on my to-do list.)</div>
+        </div>
+        <div class="meme hidden">
+            <img src="assets/img/3.png" alt="personalreasons" class="memeStyle ">
+            <div class="memeTov"> Unfortunately, due to personal reasons I have to tell you: <br> AAAAAAA </div>
+        </div>
+        <div class = "meme hidden">
+            <img src="assets/img/4.png" alt="adult" class="memeStyle">
+            <div class="memeTov"> You are an adult now <br> with responsibilities </div>
+        </div>
     </div>
-    <div class="slider">
-
+    <div class="pagination">
+        <div class="pagination-dot"> <button class="dot dot-active"></button> </div>
+        <div class="pagination-dot"> <button class="dot"> </button> </div>
+        <div class="pagination-dot"> <button class="dot"> </button> </div>
+        <div class="pagination-dot"> <button class="dot dot-tablet"> </button> </div> 
+        <div class="pagination-dot"> <button class="dot dot-tablet"> </button> </div> 
     </div>
     
 </body>
