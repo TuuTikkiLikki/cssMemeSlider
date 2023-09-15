@@ -1,48 +1,74 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem;
+    margin: 0 auto;
+    width: 90vh;
+    max-width: 100%;
+}
+
 .memeContainer{
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .meme{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 90%; 
+    flex-shrink: 1;
 }
 
 .memeStyle{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    height: 700px;
-    width: 700px;
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0.5rem double black;
 }
 
 .hidden {
     display: none;
 }
 .memeTov{
-    align-self: flex-start;
-    text-align: left;
     color: #000;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1rem;
     text-transform: uppercase; 
+    flex-wrap: wrap;
+    max-width: 80%;
+    max-height: 80%;
+    padding: 0.5rem;
+    border: 0.25rem double black;
 }
-
+.paginationContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 65%;
+} 
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    /* width: 700px; */
+    margin-top: 2rem;
+    align-self: flex-end;
 
 }
 
 .pagination-dot{
-    width: 40px;
-    height: 40px;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
 }
@@ -53,10 +79,11 @@
 .dot{
     background-color: #0C0C0E;
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
+    width: 1.5rem;
+    height: 1.5rem;
     border: none;
-    margin: 5px;
+    margin: 0.5rem;
+    margin-left: none;
 }
 .dot:hover{
     background-color: #6e5c54;
@@ -67,14 +94,38 @@
 .dot-active{
     background-color: #ebc2af;
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
+    width: 1.5rem;
+    height: 1.5rem;
     border: none;
-    margin: 5px;
-    cursor: default;
-    pointer-events: none;
+    margin: 0.5rem;
+    margin-left: none;
 }
-.dot-active:hover{
-    cursor: default;
-    pointer-events: none;
+@media (max-width: 500px) {
+    .container{
+        padding: 0;
+    }
+    .paginationContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    } 
+    .pagination{
+        order: 1;
+        align-self: center;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .memeTovContainer{
+        order: 2;
+        max-width: 80%;
+        align-self: start;
+    }
+    .memeTov{
+        margin-left: 0;
+        border: 0.25rem double black;
+        
+    }
 }
