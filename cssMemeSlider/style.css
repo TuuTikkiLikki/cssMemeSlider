@@ -20,7 +20,8 @@
     display: none;
 }
 .memeTov{
-    text-align: center;
+    align-self: flex-start;
+    text-align: left;
     color: #000;
     font-family: Inter;
     font-size: 25px;
@@ -61,7 +62,7 @@
     background-color: #6e5c54;
 }
 .dot:active{
-    background-color: #ecafae;
+    background-color: #c08f8f;
 }
 .dot-active{
     background-color: #ebc2af;
