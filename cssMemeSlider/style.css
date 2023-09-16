@@ -2,7 +2,42 @@ html {
     scroll-behavior: smooth;
 }
 
-.container{
+.meme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%; 
+    flex-shrink: 1;
+}
+.meme1{
+    background-image: url('assets/img/1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.meme2{
+    background-image: url('assets/img/2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.meme3{
+    background-image: url('assets/img/2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.meme4{
+    background-image: url('assets/img/2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.meme5{
+    background-image: url('assets/img/2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,13 +54,7 @@ html {
     margin: 0 auto;
 }
 
-.meme{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 90%; 
-    flex-shrink: 1;
-}
+
 
 .memeStyle{
     max-width: 100%;
@@ -65,7 +94,6 @@ html {
     align-self: flex-end;
 
 }
-
 .pagination-dot{
     width: 3rem;
     height: 3rem;
@@ -129,3 +157,4 @@ html {
         
     }
 }
+*/
