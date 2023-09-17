@@ -1,81 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="icon" href="assets/favicon.ico">
     <title>Possum Slider</title>
 </head>
 <body>
-    <main> 
-        <div class="sliderContainer">
-            <div class="pagination">
-                <input type="radio" name="pagination" id="meme1" class="dot" checked>
-                <input type="radio" name="pagination" id="meme2" class="dot">
-                <input type="radio" name="pagination" id="meme3" class="dot">
-                <input type="radio" name="pagination" id="meme4" class="dot">
-                <input type="radio" name="pagination" id="meme5" class="dot">
-            </div>
-            <div class="slider">
-                <div class="slides meme meme1"></div>
-                <div class="slides meme meme2"></div>
-                <div class="slides meme meme3"></div>
-                <div class="slides meme meme4"></div>
-                <div class="slides meme meme5"></div>
-            </div>
-            <div class="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
+    <div class="sliderContainer">
+        <input type="radio" name="slider" id="meme1" checked>
+        <input type="radio" name="slider" id="meme2">
+        <input type="radio" name="slider" id="meme3">
+        <input type="radio" name="slider" id="meme4">
+        <input type="radio" name="slider" id="meme5">
+    <div class="memes">
+        <div id="overflow">
+            <div class="inner">
+               <div class="meme meme_1">  </div>
+               <div class="meme meme_2"></div>
+               <div class="meme meme_3"></div>
+               <div class="meme meme_4"></div>
+               <div class="meme meme_5"></div>
             </div>
         </div>
-        <div class="tovContainer">
-            <div class="memeTovContainer">
-              <div class="memeTov memeTov_1">"I hope this email finds you well"  How this email found me</div>
-              <div class="memeTov memeTov_2">Unfortunately, due to personal reasons I have to tell you: AAAA </div>
-              <div class="memeTov memeTov_3">"You look depressed" "Thanks, it's the depression" </div>
-              <div class="memeTov memeTov_4">You are an adult now with responsibilities</div>
-              <div class="memeTov memeTov_5">Сrossing things off my to-do list (Haven't done...)</div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-        
-
-    </main>
-
-
-
-
-
-    <div class="container">
-
-
-        <div class="paginationContainer">
-
- 
-
-
-        </div>
-
-
-
-
-
-
     </div>
-
-
-    
+    <div class="tovContainer">
+        <div class="memeTovContainer">
+          <div class="memeTov">"I hope this email finds you well"  How this email found me</div>
+          <div class="memeTov">Unfortunately, due to personal reasons I have to tell you: AAAA </div>
+          <div class="memeTov">You look depressed" "Thanks, it's the depression"</div>
+          <div class="memeTov">You are an adult now with responsibilities</div>
+          <div class="memeTov">Сrossing things off my to-do list (Haven't done...)</div>
+        </div>
+    </div>
+    <div class="controls">
+        <label for="meme1"></label>
+        <label for="meme2"></label>
+        <label for="meme3"></label>
+        <label for="meme4"></label>
+        <label for="meme5"></label>
+    </div>
+   
+    </div>
 </body>
 </html>
