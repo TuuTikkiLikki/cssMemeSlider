@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fdf2f1;
+    padding: 2rem;
+}
+
+.sliderContainer {
+    margin: 0 auto;
+    width: 70vh;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sliderContainer input[type=radio] {
+    display: none;
+}
+
+.sliderContainer label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.memes {
+    padding: 0.5rem;
+    border: 0.5rem double #4a3938;
+    background: #f7d7d6;
+    width: 100%;
+    height: 70vh;
+}
+
+#overflow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#meme1:checked~.memes .inner {
+    margin-left: 0
+}
+
+#meme2:checked~.memes .inner {
+    margin-left: -100%;
+}
+
+#meme3:checked~.memes .inner {
+    margin-left: -200%;
+}
+
+#meme4:checked~.memes .inner {
+    margin-left: -300%;
+}
+#meme5:checked~.memes .inner {
+    margin-left: -400%;
+}
+
+#meme1:checked~.tovContainer .memeTovContainer{
+    transform: translateX(0);
+}
+
+#meme2:checked~.tovContainer .memeTovContainer{
+    transform: translateX(calc(-100%));
+}
+
+#meme3:checked~.tovContainer  .memeTovContainer{
+    transform: translateX(calc(-200%));
+}
+
+#meme4:checked~.tovContainer .memeTovContainer{
+    transform: translateX(calc(-300%));
+}
+#meme5:checked~.tovContainer .memeTovContainer{
+    transform: translateX(calc(-400%));
+}
+
+.tovContainer {
+    max-width: 55%;
+    overflow: hidden;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.memeTovContainer {
+    display: flex;
+    transition: 1s;
+}
+
+.memeTov {
+    min-width: 100%;
+    font-family: Inter;
+    font-size: 1rem;
+    color: #4a3938;
+}
+
+.wrapper-slider {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1.5rem;
+}
+
+.inner {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: 1s;
+}
+
+
+.meme {
+   width: 70vw;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+
+.meme_1 {
+    background-image: url('assets/img/1.jpg');
+}
+
+
+.meme_2 {
+    background-image: url('assets/img/2.jpg');
+}
+
+.meme_3 {
+    background-image: url('assets/img/3.jpg');
+}
+
+.meme_4 {
+    background-image: url('assets/img/4.jpg');
+}
+.meme_5 {
+    background-image: url('assets/img/5.jpg');
+}
+.controls {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+label {
+    display: inline;
+    background: #ebc2af;
+    border: 0.1rem solid #4a3938;
+    padding: 0.3rem;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
+}
+
+label:hover {
+    background-color: #6e5c54;
+    border: 0.1rem solid #4a3938;
+}
